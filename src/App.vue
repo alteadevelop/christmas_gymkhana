@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import HelloApp from "./components/HelloApp.vue";
+import HelloApp from "./components/views/HelloApp.vue";
 
 export default {
   name: "App",

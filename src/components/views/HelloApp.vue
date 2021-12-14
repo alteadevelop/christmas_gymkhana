@@ -3,14 +3,25 @@
     <h1>Christmas Gymkhana</h1>
     <div class="rules-app">
       <p>Bienvenida a la Gymkhana navideña. En cada nivel, en caso de acertarle, recibirás tus regalos navideños. Mucha suerte.</p>
-      <button>Comenzar</button>
+      <button-lvl :msg="msg" />
     </div>
   </div>
 </template>
 
 <script>
+
+import ButtonLvl from '@/components/ButtonLvl.vue'
+
 export default {
-  name: 'HelloApp'
+  name: 'HelloApp',
+  components: {
+    ButtonLvl
+  },
+  data() {
+    return {
+      msg: 'Comenzar'
+    }
+  }
 }
 </script>
 
@@ -25,6 +36,5 @@ div{
     width: 100%;
     text-align: center;
 }
-
 
 </style>
