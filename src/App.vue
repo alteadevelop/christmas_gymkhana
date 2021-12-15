@@ -18,9 +18,14 @@ export default {
 <style>
 
 @import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  /*font-family: 'Bakbak One', cursive;*/
+  font-family: "Poppins", sans-serif;
+}
 
 .mainDiv {
-  font-family: 'Bakbak One', cursive;
   display: flex;
   flex-direction: column;
   height: 100vh;

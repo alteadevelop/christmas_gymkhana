@@ -2,7 +2,7 @@
   <div>
     <h1>Christmas Gymkhana</h1>
     <div class="rules-app">
-      <p>Bienvenida a la Gymkhana navideña. En cada nivel, en caso de acertarle, recibirás tus regalos navideños. Mucha suerte.</p>
+      <p>Primer Nivel</p>
       <button-lvl :view="view" :msg="msg" />
     </div>
   </div>
@@ -13,14 +13,14 @@
 import ButtonLvl from '@/components/ButtonLvl.vue'
 
 export default {
-  name: 'hello-app',
+  name: 'first-level',
   components: {
     ButtonLvl
   },
   data() {
     return {
-      msg: 'Comenzar',
-      view: 'hello-app',
+      msg: 'Enviar Repuesta',
+      view: this.name
     }
   }
 }
