@@ -1,36 +1,29 @@
 <template>
   <div>
-    <button @click="sendToView({msg}, {view})">{{ msg }}</button>
+    <button @click="sendToView(msg, view)">{{ msg }}</button>
   </div>
 </template>
 
 <script>
-import firstlevelcomponent from "./views/FirstLevel.vue";
 
 export default {
   name: "button-lvl",
   props: {
     msg: {
-      type: Text,
+      type: String,
       required: true,
     },
     view: {
-      type: Text,
+      type: String,
       required: true,
     },
   },
-  setup(props) {
-    console.log(props);
-  },
-  data() {
-    return { dView: this.$props.view };
-  },
-  created() {
-    this.$emit("nextStep", firstlevelcomponent);
-  },
   methods: {
-    sendToView: (msg, view) => {
-      console.log(msg, view);
+    sendToView(msg, view) {
+      console.log(view);
+      if(view === "hello-app"){
+        console.log('vamos');
+      }
     },
   },
 };
