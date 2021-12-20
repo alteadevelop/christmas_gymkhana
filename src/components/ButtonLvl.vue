@@ -1,12 +1,10 @@
 <template>
   <div>
-    <router-link to="/firstlevel"><button @click="sendToView(msg, view)">{{ msg }}</button></router-link>
-    <router-link to="/firstlevel">lick</router-link>
+    <button @click="sendToView(currentView, nextView)">{{ msg }}</button>
   </div>
 </template>
 
 <script>
-//import router from "../router"
 
 export default {
   name: "button-lvl",
@@ -15,17 +13,18 @@ export default {
       type: String,
       required: true,
     },
-    view: {
+    currentView: {
+      type: String,
+      required: true,
+    },
+    nextView: {
       type: String,
       required: true,
     },
   },
   methods: {
-    sendToView(msg, view) {
-      console.log(view);
-      if(view === "hello-app"){
-        //router.push('/firstlevel');
-      }
+    sendToView(currentView, nextView) {
+      this.$router.push('/' + nextView);
     },
   },
 };

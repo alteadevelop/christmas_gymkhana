@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h1>Christmas Gymkhana</h1>
     <div class="rules-app">
-      <p>Bienvenida a la Gymkhana navideña. En cada nivel, en caso de acertarle, recibirás tus regalos navideños. Mucha suerte.</p>
+      <p><strong>Segundo Nivel</strong></p>
+      <p>Hay</p>
+      <input type="text" name="" id="">
       <button-lvl :currentView="currentView" :nextView="nextView" :msg="msg" />
     </div>
   </div>
@@ -13,15 +14,15 @@
 import ButtonLvl from '@/components/ButtonLvl.vue'
 
 export default {
-  name: 'hello-app',
+  name: 'secondlevel',
   components: {
     ButtonLvl
   },
   data() {
     return {
-      msg: 'Comenzar',
-      currentView: 'hello-app',
-      nextView: 'firstlevel'
+      msg: 'Enviar Repuesta',
+      currentView: 'secondlevel',
+      nextView: 'thirdlevel'
     }
   }
 }

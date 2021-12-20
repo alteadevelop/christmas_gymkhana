@@ -13,6 +13,11 @@ const routes = [
     name: "FirstLevel",
     component: () => import(/* webpackChunkName: "about" */ '@/views/FirstLevel.vue'),
   },
+  {
+    path: "/secondlevel",
+    name: "SecondLevel",
+    component: () => import(/* webpackChunkName: "about" */ '@/views/SecondLevel.vue'),
+  },
 ];
 
 const router = createRouter({

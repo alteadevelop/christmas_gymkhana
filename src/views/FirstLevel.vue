@@ -1,8 +1,10 @@
 <template>
   <div>
     <div class="rules-app">
-      <p>Primer Nivel</p>
-      <button-lvl :view="view" :msg="msg" />
+      <p><strong>Primer Nivel</strong></p>
+      <p>Hay algo que, aunque te pertenezca, la gente siempre lo utiliza más que tú. ¿Qué es?</p>
+      <input type="text" name="" id="">
+      <button-lvl :currentView="currentView" :nextView="nextView" :msg="msg" />
     </div>
   </div>
 </template>
@@ -12,14 +14,15 @@
 import ButtonLvl from '@/components/ButtonLvl.vue'
 
 export default {
-  name: 'first-level',
+  name: 'firstlevel',
   components: {
     ButtonLvl
   },
   data() {
     return {
       msg: 'Enviar Repuesta',
-      view: 'first-level'
+      currentView: 'firstlevel',
+      nextView: 'secondlevel'
     }
   }
 }
