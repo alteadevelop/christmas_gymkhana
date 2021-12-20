@@ -1,6 +1,6 @@
 <template>
   <div>
-    <button @click="sendToView(currentView, nextView)">{{ msg }}</button>
+    <button @click="sendToView(currentView, nextView, answer)">{{ msg }}</button>
   </div>
 </template>
 
@@ -14,17 +14,26 @@ export default {
       required: true,
     },
     currentView: {
-      type: String,
+      type: Object,
       required: true,
     },
     nextView: {
       type: String,
       required: true,
     },
+    answer: {
+      type: String,
+      required: true,
+    }
   },
   methods: {
-    sendToView(currentView, nextView) {
-      this.$router.push('/' + nextView);
+    sendToView(currentView, nextView, answer) {
+      if(currentView.correctAnswer === answer) {
+        this.$router.push('/' + nextView)
+      }else{
+        document.getElementById('inputQuiz').value = ''
+        alert('Respuesta incorrecta')
+      }
     },
   },
 };
@@ -35,7 +44,7 @@ export default {
 button {
   border: 3px solid rgb(196, 47, 47);
   cursor: pointer;
-  width: 50%;
+  width: 70%;
   height: 10%;
   text-transform: uppercase;
   background-color: rgba(252, 252, 252, 0);

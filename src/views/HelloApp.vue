@@ -3,7 +3,7 @@
     <h1>Christmas Gymkhana</h1>
     <div class="rules-app">
       <p>Bienvenida a la Gymkhana navideña. En cada nivel, en caso de acertarle, recibirás tus regalos navideños. Mucha suerte.</p>
-      <button-lvl :currentView="currentView" :nextView="nextView" :msg="msg" />
+      <button-lvl :currentView="currentView" :nextView="nextView" :msg="msg" :answer="answer"/>
     </div>
   </div>
 </template>
@@ -21,7 +21,8 @@ export default {
     return {
       msg: 'Comenzar',
       currentView: 'hello-app',
-      nextView: 'firstlevel'
+      nextView: 'firstlevel',
+      answer: ''
     }
   }
 }
