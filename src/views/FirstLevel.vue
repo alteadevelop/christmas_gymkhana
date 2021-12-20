@@ -1,5 +1,5 @@
 <template>
-  <div class="mainDiv">
+  <div>
     <p><strong>Primer Nivel</strong></p>
     <p>
       Hay algo que, aunque te pertenezca, la gente siempre lo utiliza más que
@@ -40,5 +40,11 @@ div {
   height: 100%;
   width: 100%;
   text-align: center;
+}
+
+input{
+  border-radius: 4px;
+  width: 40%;
+  margin: 0 auto;
 }
 </style>

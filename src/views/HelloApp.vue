@@ -20,7 +20,7 @@ export default {
   data() {
     return {
       msg: 'Comenzar',
-      currentView: 'hello-app',
+      currentView: { view: "helloapp", correctAnswer: ""},
       nextView: 'firstlevel',
       answer: ''
     }

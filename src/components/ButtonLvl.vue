@@ -1,11 +1,12 @@
 <template>
   <div>
-    <button @click="sendToView(currentView, nextView, answer)">{{ msg }}</button>
+    <button @click="sendToView(currentView, nextView, answer)">
+      {{ msg }}
+    </button>
   </div>
 </template>
 
 <script>
-
 export default {
   name: "button-lvl",
   props: {
@@ -24,15 +25,19 @@ export default {
     answer: {
       type: String,
       required: true,
-    }
+    },
   },
   methods: {
     sendToView(currentView, nextView, answer) {
-      if(currentView.correctAnswer === answer) {
-        this.$router.push('/' + nextView)
-      }else{
-        document.getElementById('inputQuiz').value = ''
-        alert('Respuesta incorrecta')
+      if (currentView.view === "helloapp") {
+        this.$router.push("/" + nextView);
+      } else {
+        if (currentView.correctAnswer === answer) {
+          this.$router.push("/" + nextView);
+        } else {
+          document.getElementById("inputQuiz").value = "";
+          alert("Respuesta incorrecta");
+        }
       }
     },
   },

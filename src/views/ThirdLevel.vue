@@ -1,7 +1,7 @@
 <template>
   <div class="mainDiv">
-    <p><strong>Segundo Nivel</strong></p>
-    <p>Nombre del maestro de David Cortizas en Taisho En</p>
+    <p><strong>Tercer Nivel</strong></p>
+    <p>Ya casi</p>
     <input type="text" v-model="answer" name="answer" id="inputQuiz" />
     <button-lvl :currentView="currentView" :nextView="nextView" :msg="msg" :answer="answer"/>
   </div>
@@ -11,15 +11,15 @@
 import ButtonLvl from "@/components/ButtonLvl.vue";
 
 export default {
-  name: "secondlevel",
+  name: "thirdlevel",
   components: {
     ButtonLvl,
   },
   data() {
     return {
       msg: "Enviar Repuesta",
-      currentView: { view: "secondlevel", correctAnswer: "oyakata"},
-      nextView: "thirdlevel",
+      currentView: { view: "thirdlevel", correctAnswer: ""},
+      nextView: "final",
       answer: "",
     };
   },
@@ -27,6 +27,4 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style >
-
-</style>
+<style></style>
