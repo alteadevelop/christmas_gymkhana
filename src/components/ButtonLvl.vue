@@ -1,10 +1,12 @@
 <template>
   <div>
-    <button @click="sendToView(msg, view)">{{ msg }}</button>
+    <router-link to="/firstlevel"><button @click="sendToView(msg, view)">{{ msg }}</button></router-link>
+    <router-link to="/firstlevel">lick</router-link>
   </div>
 </template>
 
 <script>
+//import router from "../router"
 
 export default {
   name: "button-lvl",
@@ -22,7 +24,7 @@ export default {
     sendToView(msg, view) {
       console.log(view);
       if(view === "hello-app"){
-        console.log('vamos');
+        //router.push('/firstlevel');
       }
     },
   },

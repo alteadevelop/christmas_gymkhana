@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h1>Christmas Gymkhana</h1>
     <div class="rules-app">
       <p>Primer Nivel</p>
       <button-lvl :view="view" :msg="msg" />
@@ -20,7 +19,7 @@ export default {
   data() {
     return {
       msg: 'Enviar Repuesta',
-      view: this.name
+      view: 'first-level'
     }
   }
 }

@@ -6,6 +6,7 @@
       <button-lvl :view="view" :msg="msg" />
     </div>
   </div>
+  <router-view/>
 </template>
 
 <script>

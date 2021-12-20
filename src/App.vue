@@ -1,17 +1,13 @@
 <template>
   <div class="mainDiv">
-    <HelloApp msg="Welcome to Your Vue.js App" />
+      <router-view />
   </div>
 </template>
 
 <script>
-import HelloApp from "./components/views/HelloApp.vue";
 
 export default {
   name: "App",
-  components: {
-    HelloApp,
-  },
 };
 </script>
 

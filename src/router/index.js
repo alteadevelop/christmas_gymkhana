@@ -1,6 +1,6 @@
-import { createWebHistory, createRouter } from "vue-router";
-import Home from "@/components/views/HelloApp.vue";
-import FirstLevel from "@/components/views/FirstLevel.vue";
+import { createWebHistory, createRouter } from "vue-router"
+
+import Home from "@/views/HelloApp.vue"
 
 const routes = [
   {
@@ -11,13 +11,13 @@ const routes = [
   {
     path: "/firstlevel",
     name: "FirstLevel",
-    component: FirstLevel,
+    component: () => import(/* webpackChunkName: "about" */ '@/views/FirstLevel.vue'),
   },
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
+  history: createWebHistory(process.env.BASE_URL),
+  routes
 });
 
 export default router;
