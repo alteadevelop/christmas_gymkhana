@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <button @click="sendToView(currentView, nextView, answer)">
-      {{ msg }}
-    </button>
-  </div>
+  <button @click="sendToView(currentView, nextView, answer)">
+    {{ msg }}
+  </button>
 </template>
 
 <script>
@@ -47,12 +45,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 button {
-  border: 3px solid rgb(196, 47, 47);
+  border: 6px solid rgb(56, 55, 55);
   cursor: pointer;
   width: 70%;
   height: 10%;
   text-transform: uppercase;
-  background-color: rgba(252, 252, 252, 0);
+  background-color: rgba(219, 52, 22, 0.795);
   font-size: 1.5em;
   margin-top: 20%;
 }

@@ -1,0 +1,25 @@
+.titleLvl {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+input {
+  border-radius: 4px;
+  width: 40%;
+  margin: 0 auto;
+}
+
+div {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  max-height: 100%;
+}
+
+.rules p {
+  font-size: 16px;
+  text-shadow: 0.5px 0.5px 0 rgb(235, 232, 232), -0.5px -0.5px 0 #000, 0.5px -0.5px 0 rgb(255, 255, 255),
+    -0.5px 0.5px 0 rgb(240, 237, 237), 0.5px 0.5px 0 rgb(230, 224, 224);
+  -webkit-text-stroke: 1px rgba(83, 63, 63, 0.7);
+}
+

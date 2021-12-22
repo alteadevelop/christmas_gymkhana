@@ -1,43 +1,39 @@
 <template>
   <div>
-    <h1>Christmas Gymkhana</h1>
-    <div class="rules-app">
-      <p>Bienvenida a la Gymkhana navideña. En cada nivel, en caso de acertarle, recibirás tus regalos navideños. Mucha suerte.</p>
-      <button-lvl :currentView="currentView" :nextView="nextView" :msg="msg" :answer="answer"/>
-    </div>
+    <p class="titleLvl">Christmas Gymkhana</p>
+      <section class="rules">
+        <p>Bienvenida a la Gymkhana navideña.</p>
+        <p>
+          En cada nivel tendrás que insertar una clave que encontrarás en
+          ubicaciones de la casa siguiendo la pista dada.
+        </p>
+        <p>Una vez canjeada la clave correcta, recibirás el regalo.</p>
+        <p>¡Mucha suerte!</p>
+      </section>
+      <button-lvl
+        :currentView="currentView"
+        :nextView="nextView"
+        :msg="msg"
+        :answer="answer"
+      />
   </div>
 </template>
 
 <script>
-
-import ButtonLvl from '@/components/ButtonLvl.vue'
+import ButtonLvl from "@/components/ButtonLvl.vue";
 
 export default {
-  name: 'hello-app',
+  name: "hello-app",
   components: {
-    ButtonLvl
+    ButtonLvl,
   },
   data() {
     return {
-      msg: 'Comenzar',
-      currentView: { view: "helloapp", correctAnswer: ""},
-      nextView: 'firstlevel',
-      answer: ''
-    }
-  }
-}
+      msg: "Comenzar",
+      currentView: { view: "helloapp", correctAnswer: "" },
+      nextView: "firstlevel",
+      answer: "",
+    };
+  },
+};
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-div{
-    background-image: url('/assets/background_image.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-}
-
-</style>

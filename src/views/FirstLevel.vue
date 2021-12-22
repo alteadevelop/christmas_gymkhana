@@ -1,10 +1,9 @@
 <template>
   <div>
-    <p><strong>Primer Nivel</strong></p>
-    <p>
-      Hay algo que, aunque te pertenezca, la gente siempre lo utiliza más que
-      tú. ¿Qué es?
-    </p>
+    <p class="titleLvl">Primer Nivel</p>
+    <section class="rules">
+      <p>¡Bajalo que está muy alto!</p>
+    </section>
     <input type="text" v-model="answer" name="answer" id="inputQuiz"/>
     <button-lvl :currentView="currentView" :nextView="nextView" :msg="msg" :answer="answer"/>
   </div>
@@ -21,30 +20,10 @@ export default {
   data() {
     return {
       msg: "Enviar Repuesta",
-      currentView: { view: "firstlevel", correctAnswer: "nombre"},
+      currentView: { view: "firstlevel", correctAnswer: "04c4r"},
       nextView: "secondlevel",
-      correctAnswer: "nombre",
       answer: ""
     };
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
-div {
-  background-image: url("/assets/background_image.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-input{
-  border-radius: 4px;
-  width: 40%;
-  margin: 0 auto;
-}
-</style>
