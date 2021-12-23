@@ -1,6 +1,7 @@
 .titleLvl {
   font-size: 55px;
   font-weight: bold;
+  margin-top: 5%;
 }
 
 input {
@@ -18,8 +19,18 @@ div {
 
 .rules p {
   font-size: 16px;
+  height: 80%;
   text-shadow: 0.5px 0.5px 0 rgb(235, 232, 232), -0.5px -0.5px 0 #000, 0.5px -0.5px 0 rgb(255, 255, 255),
     -0.5px 0.5px 0 rgb(240, 237, 237), 0.5px 0.5px 0 rgb(230, 224, 224);
   -webkit-text-stroke: 1px rgba(83, 63, 63, 0.7);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+*{
+  /*font-family: 'Bakbak One', cursive;*/
+  font-family: "Poppins", sans-serif;
+  
 }
 

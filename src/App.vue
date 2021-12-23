@@ -1,32 +1,28 @@
 <template>
   <div class="mainDiv">
-      <router-view />
+    <audio-component />
+    <router-view />
   </div>
 </template>
 
 <script>
+import AudioComponent from './components/AudioComponent.vue';
 
 export default {
   name: "App",
+  component: {
+    AudioComponent
+  }
 };
 </script>
 
 <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap');
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-
-*{
-  /*font-family: 'Bakbak One', cursive;*/
-  font-family: "Poppins", sans-serif;
-}
-
 .mainDiv {
   display: flex;
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background-image: url(./assets/background_image.jpg);
+  background-image: url(./assets/background.gif);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;

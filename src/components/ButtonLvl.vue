@@ -45,17 +45,17 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 button {
-  border: 6px solid rgb(56, 55, 55);
+  border: 6px solid rgba(184, 176, 176, 0.281);
   cursor: pointer;
   width: 70%;
-  height: 10%;
+  height: 8%;
   text-transform: uppercase;
-  background-color: rgba(219, 52, 22, 0.795);
+  background-color: rgb(8, 117, 189);
   font-size: 1.5em;
-  margin-top: 20%;
+  margin-top: 40%;
 }
 
 button:hover {
-  background-color: rgba(214, 95, 95, 0.692);
+  background-color: rgba(31, 139, 189, 0.692);
 }
 </style>
